@@ -18,6 +18,7 @@ namespace webspider
             ComputeCategoryCount ccc = new ComputeCategoryCount(strUrl);
             //ParseHtmlDocument phd = new ParseHtmlDocument(strUrl, booleanArray);
             //GetCategoryUrl gcu = new GetCategoryUrl(strUrl);
+            test
         }
     }
 }
