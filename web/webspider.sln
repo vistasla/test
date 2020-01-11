@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webspider", "webspider.csproj", "{DBB8B308-B895-48AA-9754-E4DC48E54CDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBB8B308-B895-48AA-9754-E4DC48E54CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB8B308-B895-48AA-9754-E4DC48E54CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB8B308-B895-48AA-9754-E4DC48E54CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB8B308-B895-48AA-9754-E4DC48E54CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDC50BC1-2E96-43A3-B0AC-96BF56BA0DF0}
+	EndGlobalSection
+EndGlobal
