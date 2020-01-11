@@ -12,3 +12,4 @@ git remote add origin https://github.com/vistasla/test.git
 git push -u origin master
 test
 test1
+test2
