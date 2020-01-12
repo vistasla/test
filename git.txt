@@ -1,0 +1,144 @@
+error: failed to push some refs to 'https://github.com/vistasla/hello-world.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+vistasla@163.com
+git init
+git add .
+git commit -m "first commit"
+git commit --test "first commit"
+git remote add origin https://github.com/vistasla/test.git
+git push -u origin master
+git push origin master
+git push -u origin test
+git push -u origin test1
+git fetch -u origin test1
+git push origin --delete serverfix
+git push origin serverfix
+git push origin branch.*.remote
+git push origin --all
+git clone -l
+git clone -l test
+git clone -l origin test
+git clone -l origin master
+git switch -c alsa-audio
+git merge alsa-audio
+git switch -c test2
+git switch test2
+git merge master
+git merge test
+-v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=(check|on-demand|no)]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+error: src refspec test does not match any
+error: failed to push some refs to 'https://github.com/vistasla/test.git'
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+$ git commit --test "first commit"
+error: unknown option `test'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+$ git commit
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+$ git push origin test
+error: src refspec test does not match any
+error: failed to push some refs to 'https://github.com/vistasla/test.git'
+
+pujing@pujing-PC MINGW64 ~/Documents/test (master)
+$ git push test
+fatal: 'test' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+git push origin branch test
+pujing@pujing-PC MINGW64 ~/Documents/test (test2)
+$ git push -u origin test2
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'test2' on GitHub by visiting:
+remote:      https://github.com/vistasla/test/pull/new/test2
+remote:
+To https://github.com/vistasla/test.git
+ * [new branch]      test2 -> test2
+Branch 'test2' set up to track remote branch 'test2' from 'origin'.
